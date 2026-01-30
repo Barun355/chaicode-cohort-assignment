@@ -1,5 +1,6 @@
 # HTML Resume Project
 
+> I have updated the portfolio. Added some css and made it responsive. The final version screenshot is at the last of this readme file.
 ## What is this?
 
 This is a simple resume website made using HTML and CSS. It shows information about a person's background, skills, work experience, and projects.
@@ -18,7 +19,7 @@ The `index.html` file includes:
 
 ## How to use it?
 
-[![Overview](./thumbnail.png)](./project-overview.mp4)
+[![Overview](./images/thumbnail.png)](./videos/project-overview.mp4)
 1. Open the `index.html` file in your web browser
 2. You will see a nicely formatted resume with all the information
 3. You can click on the project links to visit them
@@ -32,3 +33,5 @@ The CSS adds:
 - Clean and organized layout
 
 This is a great first project to learn how to structure a webpage using HTML and style it with CSS!
+
+![Final SS](./images/final-ss.png)
