@@ -1,21 +1,228 @@
-* {
-    box-sizing: border-box;
+
+:root {
+    --primary: #e07d1a;
+    --bg-primary: #f2e3d4;
+    --text-main: #180f01;
+    --text-muted: #7b705f;
+    --border: #ebe4d6;
+    --bg-card: #fff;
+    --bg-container: #fff;
+    --bg-background: #f7f3ee;
+    --bg-badge: #fff9e8;
 }
 
-table,
-th,
-td {
-  border: 1px solid black;
-  text-align: left;
+::selection {
+    background-color: var(--primary);
+    color: #fff;
 }
-thead > tr > td {
-  font-weight: bold;
-  text-align: center;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#link {
-  color: blue;
-  text-decoration: none;
+
+body {
+    background-color: var(--bg-background);
+    color: var(--text-main);
+    line-height: 1.7;
 }
-#link:hover {
-  text-decoration: underline;
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: .3rem;
+    line-height: 1.2;
+    color: var(--primary);
+}
+
+
+header,
+footer,
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--bg-container);
+    padding: 1.5rem 2rem;
+    border-bottom: 4px solid var(--primary);
+    border-inline: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .profile-image img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    background-color: var(--bg-container);
+    padding: 2rem;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+footer {
+    background-color: var(--bg-container);
+    padding: 1rem 2rem;
+    border-top: 4px solid var(--primary);
+    border-inline: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-muted);
+}
+
+section {
+    padding-block: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sub-heading {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sub-heading > svg {
+    width: 8rem;
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--bg-primary);
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+#skills > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#skills > ul > li {
+    background-color: var(--bg-badge);
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 10rem;
+    font-size: 0.9rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+[id^="project-"] {
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.25);
+    padding: 1rem;
+    border-radius: .6rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: .2rem;
+    position: relative;
+}
+
+[id^="project-"] h3 {
+    font-size: 1.6rem;
+}
+
+[id^="project-"] h3 a {
+    font-size: 1.4rem;
+}
+
+
+[id^="project-"] h3 {
+    font-size: 1.6rem;
+}
+
+[id^="project-"] p {
+    font-size: 14px;
+    line-height: 1.2rem;
+    color: var(--text-muted);
+}
+
+[id^="project-"] .technologies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem; 
+    gap: .2rem;
+}
+
+[id^="project-"] .technologies .libs-used {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+
+[id^="project-"] .technologies .libs-used span {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-color: var(--bg-badge);
+    padding: .3rem .6rem;
+    border: 1px solid var(--border);
+    border-radius: 100rem;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: lowercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+[id^="project-"] img {
+    width: 100%;
+    border-radius: .8rem;
+    box-shadow: 0 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+[id^="project-"] .timeline {
+    display: inline-block;
+    margin-top: 0.8rem;
+    background-color: var(--bg-primary);
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 10rem;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--primary);
+    position: absolute;
+    top: -28px;
+    left: 14px;
 }
