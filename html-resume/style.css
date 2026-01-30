@@ -1,4 +1,5 @@
 
+/* Define color variables for consistent theme usage across the site */
 :root {
     --primary: #e07d1a;
     --bg-primary: #f2e3d4;
@@ -11,11 +12,13 @@
     --bg-badge: #fff9e8;
 }
 
+/* Highlight selected text with primary color */
 ::selection {
     background-color: var(--primary);
     color: #fff;
 }
 
+/* Reset default margins, padding, and set consistent font for all elements */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -23,17 +26,20 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Set page background color, text color, and default line height */
 body {
     background-color: var(--bg-background);
     color: var(--text-main);
     line-height: 1.7;
 }
 
+/* Remove default list styling for list items */
 li {
     text-decoration: none;
     list-style: none;
 }
 
+/* Set main heading size, spacing, and primary color */
 h1 {
     font-size: 2.3rem;
     margin-bottom: .3rem;
@@ -42,6 +48,7 @@ h1 {
 }
 
 
+/* Set maximum width and center main layout sections */
 header,
 footer,
 .container {
@@ -49,6 +56,7 @@ footer,
     margin: 0 auto;
 }
 
+/* Style header with background, padding, border, and flexbox layout */
 header {
     background-color: var(--bg-container);
     padding: 1.5rem 2rem;
@@ -59,6 +67,7 @@ header {
     align-items: center;
 }
 
+/* Style profile image as circular with fixed size */
 header > .profile-image img {
     width: 8rem;
     height: 8rem;
@@ -66,6 +75,7 @@ header > .profile-image img {
     object-fit: cover;
 }
 
+/* Style main container with white background, padding, border, and vertical flexbox */
 .container {
     background-color: var(--bg-container);
     padding: 2rem;
@@ -75,6 +85,7 @@ header > .profile-image img {
     gap: 0.8rem;
 }
 
+/* Style footer with background, padding, borders, and centered text */
 footer {
     background-color: var(--bg-container);
     padding: 1rem 2rem;
@@ -84,6 +95,7 @@ footer {
     color: var(--text-muted);
 }
 
+/* Style section containers with padding, border, rounded corners, and vertical layout */
 section {
     padding-block: 1.5rem;
     display: flex;
@@ -94,12 +106,14 @@ section {
     border-radius: 0.5rem;
 }
 
+/* Style section headings with vertical flexbox layout and relative positioning */
 .sub-heading {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
+/* Style decorative SVG lines with primary color, rotation, and absolute positioning */
 .sub-heading > svg {
     width: 8rem;
     color: var(--primary);
@@ -109,27 +123,32 @@ section {
     bottom: -10px;
 }
 
+/* Style table with full width and collapsed borders */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
+/* Style table header with light background color */
 thead {
     background-color: var(--bg-primary);
 }
 
+/* Style table header and data cells with padding and bottom border */
 th, td {
     text-align: left;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--border);
 }
 
+/* Display skills list as flexbox row with wrapping and gaps */
 #skills > ul {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
+/* Style individual skill badges with background, border, and rounded corners */
 #skills > ul > li {
     background-color: var(--bg-badge);
     padding: 0.4rem 0.8rem;
@@ -138,6 +157,7 @@ th, td {
     font-size: 0.9rem;
 }
 
+/* Style links with primary color and underline on hover */
 a {
     color: var(--primary);
     text-decoration: none;
@@ -147,6 +167,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Style project cards with shadow, padding, grid layout, and relative positioning */
 [id^="project-"] {
     box-shadow: 0px 0px 6px rgba(0,0,0,0.25);
     padding: 1rem;
@@ -157,25 +178,26 @@ a:hover {
     position: relative;
 }
 
+/* Set size for project card headings */
 [id^="project-"] h3 {
     font-size: 1.6rem;
 }
 
+/* Set size for project card heading links */
 [id^="project-"] h3 a {
     font-size: 1.4rem;
 }
 
+/* Set size for project card headings (duplicate rule removed) */
 
-[id^="project-"] h3 {
-    font-size: 1.6rem;
-}
-
+/* Style project card paragraphs with smaller font and muted color */
 [id^="project-"] p {
     font-size: 14px;
     line-height: 1.2rem;
     color: var(--text-muted);
 }
 
+/* Display technologies section as vertical flexbox with spacing */
 [id^="project-"] .technologies {
     display: flex;
     flex-direction: column;
@@ -183,6 +205,7 @@ a:hover {
     gap: .2rem;
 }
 
+/* Display technology list items as wrapping flexbox with gaps */
 [id^="project-"] .technologies .libs-used {
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +213,7 @@ a:hover {
 }
 
 
+/* Style individual technology badges with background, border, and rounded corners */
 [id^="project-"] .technologies .libs-used span {
     display: flex;
     justify-content: center;    
@@ -205,13 +229,14 @@ a:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Style project images with full width, rounded corners, and shadow */
 [id^="project-"] img {
     width: 100%;
     border-radius: .8rem;
     box-shadow: 0 0 4px 8px rgba(0,0,0,0.1);
 }
 
-
+/* Style project timeline badge with absolute positioning and styling */
 [id^="project-"] .timeline {
     display: inline-block;
     margin-top: 0.8rem;
@@ -225,4 +250,157 @@ a:hover {
     position: absolute;
     top: -28px;
     left: 14px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet devices (768px and below) */
+@media (max-width: 768px) {
+    /* Adjust main heading size for smaller screens */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Stack header content vertically on small screens */
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    /* Reduce profile image size on small screens */
+    header > .profile-image img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /* Reduce container padding on small screens */
+    .container {
+        padding: 1.5rem;
+    }
+
+    /* Reduce section padding on small screens */
+    section {
+        padding: 0.8rem;
+        gap: 1.5rem;
+    }
+
+    /* Added gap adjustment for projects on small screens */
+    #projects {
+        gap: 3rem;
+    }
+
+    /* Convert project grid to single column on small screens */
+    [id^="project-"] {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust font sizes for project cards on small screens */
+    [id^="project-"] h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Adjust project link font size on small screens */
+    [id^="project-"] h3 a {
+        font-size: 1.1rem;
+    }
+
+    /* Reduce padding on header and footer for small screens */
+    header,
+    footer {
+        padding: 1rem;
+    }
+
+    /* Adjust SVG decoration size on small screens */
+    .sub-heading > svg {
+        width: 6rem;
+    }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+    /* Further reduce main heading size on mobile */
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    /* Reduce body font size on mobile for better readability */
+    body {
+        font-size: 14px;
+    }
+
+    /* Further reduce profile image on mobile */
+    header > .profile-image img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    /* Reduce container padding further on mobile */
+    .container {
+        padding: 1rem;
+    }
+
+    /* Reduce section padding further on mobile */
+    section {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    /* Added gap adjustment for projects on mobile */
+    #projects {
+        gap: 2rem;
+    }
+
+    /* Adjust table styles for mobile screens */
+    table {
+        font-size: 12px;
+    }
+
+    /* Reduce padding in table cells on mobile */
+    th, td {
+        padding: 0.4rem 0.6rem;
+    }
+
+    /* Stack skills list more compactly on mobile */
+    #skills > ul {
+        gap: 0.3rem;
+    }
+
+    /* Reduce skill badge size on mobile */
+    #skills > ul > li {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    /* Reduce project card padding on mobile */
+    [id^="project-"] {
+        padding: 0.8rem;
+    }
+
+    /* Further reduce project heading on mobile */
+    [id^="project-"] h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Reduce project paragraph font on mobile */
+    [id^="project-"] p {
+        font-size: 12px;
+    }
+
+    /* Reduce technology badge font on mobile */
+    [id^="project-"] .technologies .libs-used span {
+        font-size: 10px;
+        padding: 0.2rem 0.4rem;
+    }
+
+    /* Adjust header padding on mobile */
+    header {
+        padding: 0.8rem;
+    }
+
+    /* Adjust footer padding on mobile */
+    footer {
+        padding: 0.8rem 1rem;
+    }
 }
