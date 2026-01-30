@@ -293,6 +293,7 @@ a:hover {
     /* Convert project grid to single column on small screens */
     [id^="project-"] {
         grid-template-columns: 1fr;
+        gap: 1.4rem;
     }
 
     /* Adjust font sizes for project cards on small screens */
