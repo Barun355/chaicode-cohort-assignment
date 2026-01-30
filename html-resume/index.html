@@ -3,39 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Barun Tiwary, Software Developer and Cybersecurity Enthusiast">
     <title>Resume Barun Tiwary</title>
-    <style>
-        
-        table, th, td {
-            border: 1px solid black;
-            text-align: left;
-        }
-        thead > tr > td {
-            font-weight: bold;
-            text-align: center;
-        }
-        #link {
-            color: blue;
-            text-decoration: none;
-        }
-        #link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Barun Tiwary</h1>
-        <p>Software Developer | Cybersecurity Enthusiast</p>
+    <header role="banner">
+        <div class="header-section">
+            <h1>Barun Tiwary</h1>
+            <p>Software Developer | Cybersecurity Enthusiast</p>
+        </div>
     </header>
     <hr>
-    <main>
-        <section id="about">
+    <main class="container" role="main">
+        <section id="about" aria-labelledby="about-heading">
             <h2>About Me</h2>
             <p>I am a passionate software developer with a keen interest in cybersecurity. I enjoy creating efficient and secure applications while continuously learning about the latest security practices.</p>
         </section>
         <hr>
-        <section id="skills">
+        <section id="skills" aria-labelledby="skills-heading">
             <h2>Skills</h2>
             <ul>
                 <li>HTML, CSS, JavaScript</li>
@@ -48,14 +34,14 @@
             </ul>
         </section>
         <hr>
-        <section id="experience">
+        <section id="experience" aria-labelledby="experience-heading">
             <h2>Experience</h2>
             <table>
                 <thead>
                     <tr>
-                        <td>Position</td>
-                        <td>Company</td>
-                        <td>Duration</td>
+                        <th scope="col">Position</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Duration</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -78,7 +64,7 @@
             </table>
         </section>
         <hr>
-        <section>
+        <section id="projects" aria-labelledby="projects-heading">
             <h2>Projects</h2>
             <div id="project-1">
                 <h3>Project 1: <a href="https://recipereveal.in" target="_blank" id="link">Recipe Reveal</a></h3>
@@ -99,7 +85,7 @@
             </div>
         </section>
         <hr>
-        <section id="education">
+        <section id="education" aria-labelledby="education-heading">
             <h2>Education</h2>
             <table>
                 <thead>
@@ -111,29 +97,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Diploma in Computer Science & Engineering</td>
+                        <th scope="row">Diploma in Computer Science & Engineering</th>
                         <td>Gov Polytechnic Adityapur College</td>
                         <td>2026</td>
                     </tr>
                     <tr>
-                        <td>Matriculation</td>
+                        <th scope="row">Matriculation</th>
                         <td>Vivekananda English High School</td>
                         <td>2020</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2>Contact</h2>
+            <address>
+                <p>Email: <a href="mailto:contact@baruntiwary.dev">contact@baruntiwary.dev</a></p>
+                <p>Phone:</b><a href="tel:+918936044787">+91 8936044787</a></p>
+                <p>Location: Jamshedpur, India</p>
+            </address>
+        </section>
     </main>
     <hr>
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p><b>Email:</b> contact@baruntiwary.dev</p>
-            <p><b>Phone:</b> +91 8936044787</p>
-            <p><b>Location:</b> Jamshedpur, India</p>
-        </section>
-        <hr>
-        <p>© 2026 Barun Tiwary. All rights reserved.</p>
+    <footer role="contentinfo">
+        <div id="footer-section">
+            <p>© 2026 Barun Tiwary. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

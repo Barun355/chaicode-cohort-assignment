@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: left;
+}
+thead > tr > td {
+  font-weight: bold;
+  text-align: center;
+}
+#link {
+  color: blue;
+  text-decoration: none;
+}
+#link:hover {
+  text-decoration: underline;
+}
