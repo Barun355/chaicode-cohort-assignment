@@ -244,12 +244,16 @@ a:hover {
     padding: 0.3rem 0.6rem;
     border: 1px solid var(--border);
     border-radius: 10rem;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     color: var(--primary);
     position: absolute;
     top: -28px;
     left: 14px;
+}
+
+[id^="project-"] .timeline-danger {
+    background-color: #f2d4d4;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */

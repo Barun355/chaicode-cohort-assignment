@@ -1,0 +1,17 @@
+:root {
+    --primary: #14120B;
+    --secondary: #1D1B15;
+    
+    --bg-primary: var(--primary);
+    --border: #201E19;
+    --text: #EDECEC;
+    --text-muted: #999896;
+
+    --border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
