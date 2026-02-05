@@ -1,21 +1,552 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cursor</title>
-    <meta name="description" content="Built to make you extraordinarily productive, Cursor is the best way to code with AI.">
-    <link rel="canonical" href="https://cursor.com">
-    <meta properity="og:title" content="Cursor" >
-    <meta properity="og:description" content="Built to make you extraordinarily productive, Cursor is the best way to code with AI." >
-    <meta properity="og:url" content="https://cursor.com" >
-    <meta properity="og:type" content="website" >
-    <meta properity="og:image" content="https://cursor.com/og-image.png" >
-    <meta name="twitter:card" content="summary_large_image" >
-    <meta name="twitter:title" content="Cursor" >
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <meta
+      name="description"
+      content="Built to make you extraordinarily productive, Cursor is the best way to code with AI."
+    />
+    <link rel="canonical" href="https://cursor.com" />
+    <meta properity="og:title" content="Cursor" />
+    <meta
+      properity="og:description"
+      content="Built to make you extraordinarily productive, Cursor is the best way to code with AI."
+    />
+    <meta properity="og:url" content="https://cursor.com" />
+    <meta properity="og:type" content="website" />
+    <meta properity="og:image" content="https://cursor.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cursor" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="container">
+      <div class="icon" id="header-icon">
+        <video
+          id="icon-video"
+          class="icon-video"
+          muted
+          autoplay
+          style="opacity: 10"
+        >
+          <source
+            src="./assets/icons/App Icons/PNG/logo-dark-theme.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <img
+          class="icon-img-overlay"
+          src="./assets/icons/App Icons/PNG/APP_ICON_2D_DARK.png"
+          alt=""
+          style="opacity: 1"
+        />
+        <img
+          class="icon-img"
+          src="./assets/icons/General Logos/Lockup Horizontal/SVG/LOCKUP_HORIZONTAL_25D_DARK.svg"
+          alt="Cursor Icon"
+          style="opacity: 1"
+        />
+      </div>
+      <ul>
+        <li>Features</li>
+        <li>Enterprise</li>
+        <li>Pricing</li>
+        <li>Resources</li>
+      </ul>
+      <div class="cta">
+        <button class="btn btn-outline btn-sm">Sign In</button>
+        <button class="btn btn-primary btn-sm">Download</button>
+      </div>
+    </nav>
+    <section id="hero" class="container">
+      <div class="main-content">
+        <h3>
+          Build to make you extraordinarily productive,<br />
+          Cursor is the best way to code with AI.
+        </h3>
+        <button class="btn btn-primary btn-md">Download for Linux ⤓</button>
+      </div>
+      <div class="hero-image">
+        <img
+          src="./assets/images/hero-img.png"
+          alt=""
+          style="width: 100%; height: auto"
+        />
+      </div>
+    </section>
+    <section id="trusted-by" class="container">
+      <h5>Trusted everyday by millions of professional developers.</h5>
+      <div class="companies">
+        <div class="company">
+          <img src="./assets/images/stripe.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/openai.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/linear.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/datadog.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/nvidia.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/figma.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/ramp.svg" alt="" />
+        </div>
+        <div class="company">
+          <img src="./assets/images/adobe.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="features" class="container">
+      <div class="feature-1 feature-image-right">
+        <div class="left">
+          <h3 class="">Agent turns ideas into code</h3>
+          <p class="text-muted">
+            A human-AI programmer, orders of magnitude more effective than any
+            developer alone.
+          </p>
+          <button class="btn btn-link text-primary">Learn about Agent →</button>
+        </div>
+        <div class="right">
+          <img src="./assets/images/features1.webp" alt="" />
+        </div>
+      </div>
+      <div class="feature-2 feature-image-left">
+        <div class="left">
+          <h3 class="">Magically accurate autocomplete</h3>
+          <p class="text-muted">
+            Our custom Tab model predicts your next action with striking speed
+            and precision.
+          </p>
+          <button class="btn btn-linkk text-primary">Learn about tab →</button>
+        </div>
+        <div class="right">
+          <img src="./assets/images/features2.webp" alt="" />
+        </div>
+      </div>
+      <div class="feature-3 feature-image-right">
+        <div class="left">
+          <h3 class="">Everywhere software get built</h3>
+          <p class="text-muted">
+            Cursor is in GitHub reviewing your PRs, a teammate in Slack, and
+            anywhere else you work.
+          </p>
+          <button class="btn btn-linkk text-primary">
+            Learn about Cursor's ecosystem →
+          </button>
+        </div>
+        <div class="right">
+          <img src="./assets/images/featurea3.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="container">
+      <h2>The new way to build software.</h2>
+      <div class="testi-cards">
+        <div class="card">
+          <figure>
+            <blockquote>
+              It was night and day from one batch to another, adoption went from
+              single digits to over 80%. It just spread like wildfire, all the
+              best builders were using Cursor.
+            </blockquote>
+            <div class="profile">
+              <img src="./assets/images/profile2.webp" alt="" />
+              <div class="profile-info">
+                <h5>Diana Hu</h5>
+                <span class="text-muted">General partner, Y Combinator</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <blockquote>
+              The most useful AI tool that I currently pay for, hands down, is
+              Cursor. It's fast, autocompletes when and where you need it to,
+              handles brackets properly, sensible keyboard shortcuts,
+              bring-your-own-model... everything is well put together.
+            </blockquote>
+            <div class="profile">
+              <img src="./assets/images/profile5.webp" alt="" />
+              <div class="profile-info">
+                <h5>Diana Hu</h5>
+                <span class="text-muted">General partner, Y Combinator</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <blockquote>
+              The best LLM applications have an autonomy slider: you control how
+              much independence to give the AI. In Cursor, you can do Tab
+              completion, Cmd+K for targeted edits, or you can let it rip with
+              the full autonomy agentic version.
+            </blockquote>
+            <div class="profile">
+              <img src="./assets/images/profile1.webp" alt="" />
+              <div class="profile-info">
+                <h5>Diana Hu</h5>
+                <span class="text-muted">General partner, Y Combinator</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <blockquote>
+              Cursor quickly grew from hundreds to thousands of extremely
+              enthusiastic Stripe employees. We spend more on R&D and software
+              creation than any other undertaking, and there's significant
+              economic outcomes when making that process more efficient and
+              productive.
+            </blockquote>
+            <div class="profile">
+              <img src="./assets/images/profile4.webp" alt="" />
+              <div class="profile-info">
+                <h5>Diana Hu</h5>
+                <span class="text-muted">General partner, Y Combinator</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <blockquote>
+              It's official.
+              <br />
+              <br />
+              I hate vibe coding. I love Cursor tab coding.
+              <br />
+              <br />
+              It's wild.
+            </blockquote>
+            <div class="profile">
+              <img src="./assets/images/profile6.webp" alt="" />
+              <div class="profile-info">
+                <h5>Diana Hu</h5>
+                <span class="text-muted">General partner, Y Combinator</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <blockquote>
+              It's definitely becoming more fun to be a programmer. It's less
+              about digging through pages and more about what you want to
+              happen. We are at the 1% of what's possible, and it's in
+              interactive experiences like Cursor where models like GPT-5 shine
+              brightest.
+            </blockquote>
+            <div class="profile">
+              <img src="./assets/images/profile3.webp" alt="" />
+              <div class="profile-info">
+                <h5>Diana Hu</h5>
+                <span class="text-muted">General partner, Y Combinator</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="stories" class="container">
+      <h2>Stay on the frontier</h2>
+      <div class="stories">
+        <div class="story">
+          <div class="story-content">
+            <h4>Access the best models</h4>
+            <p class="text-muted">
+              Choose between every cutting-edge model from OpenAI, Anthropic,
+              Gemini, and xAI.
+            </p>
+          </div>
+          <button class="btn btn-link text-primary">Explore models ↗</button>
+          <div class="story-img">
+            <img src="./assets/images/story1.webp" alt="" />
+          </div>
+        </div>
+        <div class="story">
+          <div class="story-content">
+            <h4>Access the best models</h4>
+            <p class="text-muted">
+              Choose between every cutting-edge model from OpenAI, Anthropic,
+              Gemini, and xAI.
+            </p>
+          </div>
+          <button class="btn btn-link text-primary">Explore models ↗</button>
+          <div class="story-img">
+            <img src="./assets/images/story2.webp" alt="" />
+          </div>
+        </div>
+        <div class="story">
+          <div class="story-content">
+            <h4>Access the best models</h4>
+            <p class="text-muted">
+              Choose between every cutting-edge model from OpenAI, Anthropic,
+              Gemini, and xAI.
+            </p>
+          </div>
+          <button class="btn btn-link text-primary">Explore models ↗</button>
+          <div class="story-img">
+            <img src="./assets/images/story3.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="changelog" class="container">
+      <h2>Changelog</h2>
+      <div class="changelogs">
+        <div class="changelog">
+          <div class="head text-muted">
+            <button class="btn btn-muted">2.4</button>
+            <time datetime="22-01-2026">Jan 22, 2026</time>
+          </div>
+          <p>Subagents, Skills, and Image Generation</p>
+        </div>
+        <div class="changelog">
+          <div class="head text-muted">
+            <button class="btn btn-muted">2.4</button>
+            <time datetime="22-01-2026">Jan 22, 2026</time>
+          </div>
+          <p>Subagents, Skills, and Image Generation</p>
+        </div>
+        <div class="changelog">
+          <div class="head text-muted">
+            <button class="btn btn-muted">2.4</button>
+            <time datetime="22-01-2026">Jan 22, 2026</time>
+          </div>
+          <p>Subagents, Skills, and Image Generation</p>
+        </div>
+        <div class="changelog">
+          <div class="head text-muted">
+            <button class="btn btn-muted">2.4</button>
+            <time datetime="22-01-2026">Jan 22, 2026</time>
+          </div>
+          <p>Subagents, Skills, and Image Generation</p>
+        </div>
+      </div>
+      <button class="btn btn-link text-primary">
+        See what's new in Cursor →
+      </button>
+    </section>
+    <section id="teams" class="container">
+      <h2>
+        Cursor is an applied team focused <br />
+        on building the future of coding.
+      </h2>
+      <button class="btn btn-md btn-primary">Join us →</button>
+      <div class="team-img">
+        <img src="./assets/images/team.webp" alt="" />
+      </div>
+    </section>
+    <section id="highlights">
+      <div class="container">
+        <div class="left">
+          <h2>Recent highlights</h2>
+        </div>
+        <div class="right">
+          <article class="highlight">
+            <h4>Introducing Cursor 2.0 and Composer</h4>
+            <p class="text-muted">
+              A new interface and our first coding model, both purpose-built for
+              working with agents.
+            </p>
+            <span class="text-muted"
+              >Product <time datetime="29-10-2025">Oct 29, 2025</time></span
+            >
+          </article>
+          <article class="highlight">
+            <h4>Improving cursor Tab with online RL</h4>
+            <p class="text-muted">
+              Our new Tab model makes 21% fewer suggestions while having 28%
+              higher accept rate.
+            </p>
+            <span class="text-muted"
+              >Research <time datetime="12-09-2025">Sep 12, 2025</time></span
+            >
+          </article>
+          <article class="highlight">
+            <h4>1.5x faster MoE training with custom MXFP8 kernels</h4>
+            <p class="text-muted">
+              Achieving a 3.5x MoE layer speedup with a ocmplete rebuild for
+              Blackwell GPUs.
+            </p>
+            <span class="text-muted"
+              >Research <time datetime="29-08-2025">Aug 29, 2025</time></span
+            >
+          </article>
+          <button class="btn btn-link text-primary">View more posts →</button>
+        </div>
+      </div>
+    </section>
+    <section id="final-cta" class="container">
+      <h1>Try Cursor now.</h1>
+      <button class="btn btn-md btn-primary">Download for Linux ⤓</button>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="top">
+          <div class="footer-col">
+            <h6>Product</h6>
+            <nav>
+              <ul>
+                <li>Features</li>
+                <li>Enterprise</li>
+                <li>Web Agents</li>
+                <li>Bugbot</li>
+                <li>CLI</li>
+                <li>Pricing</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h6>Resources</h6>
+            <nav>
+              <ul>
+                <li>Download</li>
+                <li>Changelog</li>
+                <li>Docs</li>
+                <li>Learn</li>
+                <li>Forum</li>
+                <li>Status</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h6>Company</h6>
+            <nav>
+              <ul>
+                <li>Careers</li>
+                <li>Blog</li>
+                <li>Community</li>
+                <li>Workshops</li>
+                <li>Students</li>
+                <li>Brand</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h6>Legal</h6>
+            <nav>
+              <ul>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Data Use</li>
+                <li>Security</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h6>Connect</h6>
+            <nav>
+              <ul>
+                <li>X</li>
+                <li>Linkedin</li>
+                <li>Youtube</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <span>© 2026 Anysphere, Inc.</span>
+            <span>🛡 SOC 2 Certified</span>
+          </div>
+          <div class="right">
+            <div class="dark-mode">
+              <div class="on"></div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  stroke-width="2.5"
+                  stroke="#CACBD2"
+                  fill="none"
+                  class="duration-300 transform transition-all"
+                >
+                  <rect
+                    x="8.6"
+                    y="10.11"
+                    width="46.81"
+                    height="36.51"
+                    rx="2"
+                  ></rect>
+                  <path
+                    d="M8.6 39.3h46.8M29 46.62l-3 7.65M35.5 46.62l3 7.65M21.09 53.89h21.82"
+                  ></path>
+                </svg>
+              </button>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  stroke-width="2.5"
+                  stroke="#CACBD2"
+                  fill="none"
+                  class="duration-300 transform transition-all"
+                >
+                  <path
+                    d="M50.4 24.38l7.9-1.24M47.93 17.11l4.94-2.91M42.89 11.73l3.32-7.22M33.45 10.69l-.04-5.73M24.29 12.09l-2.67-7.58M17.99 17.03l-5.03-2.74M15.78 23.97l-7.75-1.31M26.22 45.47c0-5.16-3.19-9.49-4.91-12.69A12.24 12.24 0 0119.85 27c0-6.79 6.21-12.3 13-12.3M39.48 45.47c0-5.16 3.19-9.49 4.91-12.69A12.24 12.24 0 0045.85 27c0-6.79-6.21-12.3-13-12.3"
+                  ></path>
+                  <rect
+                    x="23.63"
+                    y="45.19"
+                    width="18.93"
+                    height="4.25"
+                    rx="2.12"
+                  ></rect>
+                  <rect
+                    x="24.79"
+                    y="49.43"
+                    width="16.61"
+                    height="4.25"
+                    rx="2.12"
+                  ></rect>
+                  <path
+                    d="M36.32 53.68v.84a3.23 3.23 0 11-6.44 0v-.84M24.57 26.25a7.5 7.5 0 017.88-7.11"
+                  ></path>
+                </svg>
+              </button>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  stroke-width="2.5"
+                  stroke="#CACBD2"
+                  fill="none"
+                  class="duration-300 transform transition-all"
+                >
+                  <path
+                    d="M41.56 38.94a17.37 17.37 0 01-15.06-15.8 17.14 17.14 0 013.07-11.24.11.11 0 00-.11-.16 19.3 19.3 0 1022.95 25.19.1.1 0 00-.14-.12 17.23 17.23 0 01-10.71 2.13z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <span
+              >🌐 English
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                stroke-width="8"
+                stroke="#edecec"
+                fill="none"
+                class="duration-300 transform transition-all"
+              >
+                <path d="M6.53 18.86l26.63 25.26 24.26-25.26"></path></svg
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
