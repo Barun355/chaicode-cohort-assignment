@@ -1,6 +1,8 @@
 
 :root {
     --primary: #08090A;
+    --secondary: #FDFDFE;
+    --accent: #FDFDFE;
 }
 
 * {
