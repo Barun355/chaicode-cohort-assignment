@@ -1,0 +1,11 @@
+
+:root {
+    --primary: #08090A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
