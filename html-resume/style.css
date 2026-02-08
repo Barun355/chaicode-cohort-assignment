@@ -256,6 +256,99 @@ a:hover {
     background-color: #f2d4d4;
 }
 
+/* Blogs section - vertical flexbox layout for all blog posts */
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Individual blog card with 24-column grid layout */
+#blog {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 14rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: .8rem;
+}
+
+/* Left side of blog card containing image */
+#blog .upper {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+/* Metadata overlay on blog image with date and read time */
+#blog .upper .meta {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .2rem;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .6rem;
+}
+
+/* Style date and read time badges with primary background */
+#blog .upper .meta .datetime,
+#blog .upper .meta .readtime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    background: var(--primary);
+    padding-inline: .6rem;
+    padding-block: .2rem;
+    color: #fff;
+    border-radius: 10rem;
+    font-size: 14px;
+}
+
+/* Blog cover image with full width and height */
+#blog .upper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right side of blog card containing text content */
+#blog .lower {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 13;
+    grid-column-end: 25;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Blog post title styling */
+#blog .lower h3 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: .4rem;
+}
+
+/* Blog post description text styling */
+#blog .lower p {
+    font-size: 14px;
+    line-height: 1.2rem;
+    color: var(--text-muted);
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet devices (768px and below) */
@@ -319,6 +412,40 @@ a:hover {
     /* Adjust SVG decoration size on small screens */
     .sub-heading > svg {
         width: 6rem;
+    }
+
+    /* Stack blog cards vertically on small screens */
+    #blog {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    /* Adjust blog image to take full width on small screens */
+    #blog .upper {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 12rem;
+    }
+
+    /* Adjust blog text content to take full width below image on small screens */
+    #blog .lower {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 1rem;
+    }
+
+    /* Reduce blog title font on small screens */
+    #blog .lower h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Reduce blog description font on small screens */
+    #blog .lower p {
+        font-size: 12px;
     }
 }
 
@@ -407,5 +534,48 @@ a:hover {
     /* Adjust footer padding on mobile */
     footer {
         padding: 0.8rem 1rem;
+    }
+
+    /* Stack blog cards vertically on mobile */
+    #blog {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 0.5rem;
+    }
+
+    /* Adjust blog image height on mobile */
+    #blog .upper {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 10rem;
+        border-radius: 0.6rem;
+    }
+
+    /* Adjust blog text content on mobile */
+    #blog .lower {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 0.8rem;
+    }
+
+    /* Further reduce blog title font on mobile */
+    #blog .lower h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    /* Further reduce blog description font on mobile */
+    #blog .lower p {
+        font-size: 11px;
+        line-height: 1.1rem;
+    }
+
+    /* Reduce SVG decoration size further on mobile */
+    .sub-heading > svg {
+        width: 4rem;
     }
 }
